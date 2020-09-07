@@ -35,7 +35,7 @@ public class Bai1 {
         currentYear = sc.nextInt();
 
         if (currentMonth!=2) {
-            if ((currentDay < (searchDays(currentMonth) - 1)) && (currentMonth != 12)) {
+            if ((currentDay < (searchDays(currentMonth) )) && (currentMonth != 12)) {
                 nextDay = currentDay + 1;
                 nextMonth = currentMonth;
                 nextYear = currentYear;
