@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package buoi3.bai7;
+package Buoi3.Bai7;
 
 import java.util.ArrayList;
 import java.util.Scanner;
