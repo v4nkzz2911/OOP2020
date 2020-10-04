@@ -1,7 +1,5 @@
 package TH_Buoi1.BT.Bai1;
 
-import Buoi4.BaiTap.Bai1.SinhVien;
-
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;

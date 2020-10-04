@@ -1,9 +1,5 @@
 package TH_Buoi1.BT.Bai1;
 
-import Buoi2.Bai2.SinhVien;
-
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
