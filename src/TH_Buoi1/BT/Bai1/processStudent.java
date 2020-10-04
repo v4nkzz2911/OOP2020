@@ -1,0 +1,38 @@
+package TH_Buoi1.BT.Bai1;
+
+import Buoi2.Bai2.SinhVien;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class processStudent {
+
+    private static ArrayList<Student> list = new ArrayList<Student>(10000);
+    public static void  createList(){
+        String rep="y";
+        Scanner sc = new Scanner(System.in);
+        int i;
+        while (rep.equals("y")) {
+            Student t = new Student();
+            t.inputInfo();
+            list.add(t);
+            System.out.println("Nhập tiếp?(y/n)");
+            rep = sc.nextLine();
+        }
+    }
+    public static void read(String path){
+        ReadFromBinaryFile.docFile(path);
+    }
+
+    public static void write(String path){
+        WriteToBinaryFile.ghiFile(list,path);
+    }
+    public static void outputList(){
+        int i;
+        for(i=0;i<list.size();i++){
+            list.get(i).outputInfo();
+        }
+    }
+}
